@@ -2,10 +2,10 @@ import React from "react";
 
 export default function What() {
   return (
-    <section className="px-20 py-10 bg-gray-100">
-      <div className="min-h-screen flex justify-around items-center">
-        <div className="text-gray-500 w-2/5">
-          <h1 className="text-black font-extrabold">What I do ?</h1>
+    <section className="px-20 py-10 bg-gray-100 max-xs:px-5">
+      <div className="min-h-screen flex justify-around items-center flex-wrap max-md2:w-full">
+        <div className="text-gray-500 w-2/5 max-xs:w-full max-sm:w-4/5 max-lg:w-3/4 text-center">
+          <h1 className="text-black font-extrabold text-center">What I do ?</h1>
           <p className="text-xs mt-5 my-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
             arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices
@@ -19,7 +19,7 @@ export default function What() {
             My projet
           </button>
         </div>
-        <div className="flex flex-col justify-around text-gray-500 w-2/5">
+        <div className="flex flex-col justify-around text-gray-500 w-2/5 max-md2:w-full">
           <div className="bg-white rounded shadow p-5 hover:border-l-4 hover:border-[#BC5ABA] my-2">
             <h1 className="text-xl font-extrabold text-black">
               User Experience (UX)

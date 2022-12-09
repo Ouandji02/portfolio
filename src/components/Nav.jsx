@@ -27,13 +27,13 @@ export default function Nav() {
       </div>
       <ul className=" max-md:absolute z-[1] max-md:bg-white max-md:top-[69px] max-md:shadow flex text-sm items-center max-md:hidden max-md:block max-md: max-md:w-100 max-md:right-5 max-md:py-5 max-md:ml-0">
         <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          Accueil
+        <a href="accueil">Accueil</a>
         </li>
         <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          A propos
+        <a href="propos">A propos</a>  
         </li>
         <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          Processus
+        <a href="#processus">Processus</a>  
         </li>
         <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
           Portfolio

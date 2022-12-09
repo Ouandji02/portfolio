@@ -8,11 +8,11 @@ import img6 from "../assets/images/portfolio6.png";
 
 export default function Portfolio() {
   return (
-    <section className="px-20 py-20 bg-white">
+    <section className="px-20 py-20 bg-white max-xs:px-5">
       <div className="min-h-screen">
         <h1 className="text-3xl text-center">Portfolio</h1>
         <div className="flex justify-center my-5">
-          <p className="text-xs text-gray-500 text-center w-1/3">
+          <p className="text-xs text-gray-500 text-center w-1/3 max-xs:w-full max-sm:w-4/5 max-lg:w-3/4">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>

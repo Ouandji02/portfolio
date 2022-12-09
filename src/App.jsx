@@ -1,5 +1,7 @@
 import Nav from './components/Nav'
 import Blog from './pages/Blog'
+import FinalSection from './pages/FinalSection'
+import Footer from './pages/Footer'
 import Header from './pages/Header'
 import Idea from './pages/Idea'
 import Portfolio from './pages/Portfolio'
@@ -15,6 +17,8 @@ function App() {
     <Idea></Idea>
     <Blog></Blog>
     <What></What>
+    <FinalSection></FinalSection>
+    <Footer></Footer>
     </>
   )
 }

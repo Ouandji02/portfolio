@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Idea() {
   return (
-    <section className="bg-[#422E7B] px-20 py-10 text-white">
+    <section className="bg-[#422E7B] px-20 py-10 text-white px-5">
       <div className="flex flex-col items-center my-5">
-        <h1 className="w-1/2 text-3xl text-center">
+        <h1 className="w-1/2 text-3xl text-center max-xs:w-full max-sm:w-4/5 max-lg:w-3/4">
           Do you have Project Idia? Let's discuss your project!
         </h1>
-        <p className="w-1/2 text-xs text-center my-5">
+        <p className="w-1/2 text-xs text-center my-5 max-xs:w-full max-sm:w-4/5 max-lg:w-3/4">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration.
         </p>

@@ -4,7 +4,7 @@ import img from "../assets/images/image.png";
 
 export default function Header() {
   return (
-    <section class="max-lg:pt-10 py-10 bg-cover bg-center bg-no-repeat px-20 bg-gradient-to-r from-white via-white to-[#B2ABD0] max-sx:px-5 max-sx:pr-2">
+    <section id="accueil" class="max-lg:pt-10 py-10 bg-cover bg-center bg-no-repeat px-20 bg-gradient-to-r from-white via-white to-[#B2ABD0] max-sx:px-5 max-sx:pr-2">
       <div>
         <div className="relative flex max-h-screen max-w-screen lg:items-center mx-auto justify-between">
           <div className="max-w-md text-center sm:text-left">

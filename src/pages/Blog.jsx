@@ -13,42 +13,30 @@ export default function Blog() {
         <div id="controls-carousel" class="relative" data-carousel="static">
           <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src={img2}
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div
-              class="hidden duration-700 ease-in-out"
-              data-carousel-item="active"
-            >
-              <img
-                src={img1}
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
+              <div className="rounded shadow w-48 text-xs mb-10">
+                <img src={img1} alt="" width={200} className="h-32" />
+                <div className="px-2 py-3">
+                  <div className="text-gray-500">
+                    <p className="text-gray-500">22 oct 2020 / 246 comments </p>
+                  </div>
+                  <p className="my-3 font-extrabold text-sm text-black">
+                    Vivamus eleifend convallis ante, non pharetra libero .
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src={img3}
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src={img4}
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src={img5}
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
+              <div className="rounded shadow w-48 text-xs mb-10">
+                <img src={img1} alt="" width={200} className="h-32" />
+                <div className="px-2 py-3">
+                  <div className="text-gray-500">
+                    <p className="text-gray-500">22 oct 2020 / 246 comments </p>
+                  </div>
+                  <p className="my-3 font-extrabold text-sm text-black">
+                    Vivamus eleifend convallis ante, non pharetra libero .
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
