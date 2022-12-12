@@ -1,11 +1,20 @@
 import React from "react";
+import {
+  FaChalkboard,
+  FaChartBar,
+  FaFileAlt,
+  FaPenSquare,
+} from "react-icons/fa";
 
 export default function Process() {
   return (
-    <section id="processus" className="px-20 bg-gray-100 my-auto max-lg:px-10 max-sm:px-5">
+    <section
+      id="processus"
+      className="px-20 bg-gray-100 my-auto max-lg:px-10 max-sm:px-5"
+    >
       <div className="animate-wave flex justify-center min-h-screen items-center pb-10 max-md2:flex-wrap max-md2:justify-center max-md2:pt-20 ">
-        <div className="text-xs text-gray-500 w-2/3 max-md:max-w-48 max-xs2:w-4/5 text-center max-sx:w-full">
-          <h1 className="text-black mb-5">Work Process</h1>
+        <div className="text-xs text-gray-500 w-2/3 max-md:max-w-48 max-xs2:w-4/5 text-center max-sx:w-full ">
+          <h1 className="text-black mb-5 font-extrabold">Work Process</h1>
           <p className="py-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
             repellat. Nihil laudantium deleniti placeat id incidunt dolorem sint
@@ -18,9 +27,11 @@ export default function Process() {
           </p>
         </div>
         <div className="ml-20 mt-40 max-w-xl flex flex-wrap max-lg:ml-2 max-md2:mt-10 max-xs2:justify-center">
-          <div className="bg-white p-5 w-56 mb-2 rounded shadow max-xs2:w-full">
+          <div className="bg-white p-5 w-56 mb-2 rounded shadow-xl max-xs2:w-full hover:scale-125 transition duration-1000">
             <div className="mb-5">
-              <button>icons</button>
+              <button>
+                <FaFileAlt size={25} />
+              </button>
             </div>
             <h1 className="mb-3 text-xl font-extrabold">1. Research</h1>
             <p className="text-gray-400 text-xs">
@@ -29,9 +40,11 @@ export default function Process() {
               necessitatibus
             </p>
           </div>
-          <div className="bg-white p-5 w-56 mb-2 mt-2 ml-2 rounded shadow max-xs2:w-full">
+          <div className="bg-white p-5 w-56 mb-2 mt-2 ml-2 rounded shadow-xl max-xs2:w-full hover:scale-125 transition duration-1000">
             <div className="mb-5">
-              <button>icons</button>
+              <button>
+                <FaPenSquare size={25} />
+              </button>
             </div>
             <h1 className="mb-3 text-lg font-extrabold">1. Research</h1>
             <p className="text-gray-400 text-xs">
@@ -40,9 +53,11 @@ export default function Process() {
               necessitatibus
             </p>
           </div>
-          <div className="bg-white p-5 w-56 mb-2 rounded shadow max-xs2:w-full">
+          <div className="bg-white p-5 w-56 mb-2 rounded shadow-xl max-xs2:w-full hover:scale-125 transition duration-1000">
             <div className="mb-5">
-              <button>icons</button>
+              <button>
+                <FaChartBar size={25} />
+              </button>
             </div>
             <h1 className="mb-3 text-xl font-extrabold">1. Research</h1>
             <p className="text-gray-400 text-xs">
@@ -51,9 +66,11 @@ export default function Process() {
               necessitatibus
             </p>
           </div>
-          <div className="bg-white p-5 w-56 ml-2 mt-1 rounded shadow max-xs2:w-full">
+          <div className="bg-white p-5 w-56 ml-2 mt-1 rounded shadow-xl max-xs2:w-full hover:scale-125 transition duration-1000">
             <div className="mb-5">
-              <button>icons</button>
+              <button>
+                <FaChalkboard size={25} />
+              </button>
             </div>
             <h1 className="mb-3 text-xl font-extrabold">1. Research</h1>
             <p className="text-gray-400 text-xs">

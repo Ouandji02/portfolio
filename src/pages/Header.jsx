@@ -1,6 +1,17 @@
 import React from "react";
 import Nav from "../components/Nav";
 import img from "../assets/images/image.png";
+import {
+  FaBeer,
+  FaFacebook,
+  FaFacebookF,
+  FaFileDownload,
+  FaGithub,
+  FaLinkedin,
+  FaLinkedinIn,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -22,23 +33,23 @@ export default function Header() {
               programmation kotlin.Je fais egalement du developpement web
               notamment avec les technologies ReactJS et NextJs
             </p>
-            <button className="bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold">
+            <button className="transition duration-1000 rounded bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold">
               Dit Bonjour!
             </button>
             <div className="flex justify-between text-gray-600 mt-10 max-sm:block">
-              <div className="py-3 px-8 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6]">
+              <div className="py-3 px-8 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6] hover:scale-120 transition duration-1000">
                 <span className="text-black font-semibold text-xl">+2Y</span>
                 <br />
                 <span className="text-xs font-bold pt-3">Experience</span>
               </div>
-              <div className="py-3 px-5 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6]">
+              <div className="py-3 px-5 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6] hover:scale-120 transition duration-1000">
                 <span className="text-black font-bold text-xl">10</span>
                 <br />
                 <span className="text-xs font-semibold pt-3">
                   Projets accomplis
                 </span>
               </div>
-              <div className="py-3 px-7 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6]">
+              <div className="py-3 px-7 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6] hover:scale-120 transition duration-1000">
                 <span className="text-black font-bold text-xl">8</span>
                 <br />
                 <span className="text-xs font-semibold pt-3">
@@ -51,16 +62,25 @@ export default function Header() {
             <img src={img} alt="" className="h-96 w-96" />
           </div>
         </div>
-        <div className="animate-wave animate-bounce py-10 flex justify-center bg-white shadow rounded relative top-[200px] mb-3 flex-wrap max-lgsm:w-auto max-mdsm:justify-center max-mdsm:top-[100px]">
+        <div className="animate-wave py-10 flex justify-center bg-white shadow rounded relative top-[200px] mb-3 flex-wrap max-lgsm:w-auto max-mdsm:justify-center max-mdsm:top-[100px]">
           <div className=" p-5 bg-gray-100 rounded max-w-sm max-h-80 max-mdsm:max-w-full mb-10">
             <img src={img} alt="" className="max-h-80" />
-            <div className="relative flex bg-white p-2 shadow top-[-50px] rounded">
-              <button className="mx-1 bg-secondary text-white">dsfd</button>
-              <button className="mx-1 bg-secondary text-white">sfd</button>
-              <button className="mx-1 bg-secondary text-white">sdff</button>
+            <div className="relative flex justify-between bg-white p-4 shadow-lg top-[-40px] rounded items-center">
+              <button className="mx-1 hover:scale-125 transition duration-1000 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] ">
+                <FaFacebookF size={20} />
+              </button>
+              <button className="mx-1 hover:scale-125 transition duration-1000 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] ">
+                <FaTwitter size={20} />
+              </button>
+              <button className="mx-1 hover:scale-125 transition duration-1000 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] ">
+                <FaLinkedinIn  size={20} />
+              </button>
+              <button className="mx-1 hover:scale-125 transition duration-1000 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] ">
+                <FaGithub  size={20} />
+              </button>
             </div>
           </div>
-          <div className="max-w-md max-lgsm:max-w-sm max-mdsm:max-w-full ml-10">
+          <div className="max-w-md max-lgsm:max-w-sm max-mdsm:max-w-full ml-10 max-mdsm:pt-10 max-mdsm:pr-5">
             <h1 className="text-3xl my-3 font-extrabold max-sm:text-xl">
               I am Professional User Experience Designer
             </h1>
@@ -73,12 +93,12 @@ export default function Header() {
               I design and develop services for customers specializing creating
               stylish, modern websites, web services.
             </div>
-            <div>
-              <button className="mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center ">
+            <div className="flex max-sm:block">
+              <button className="transition duration-1000 rounded mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center ">
                 My projet
               </button>
-              <button className="bg-white text-[#BC5ABA] border-[#BC5ABA] font-extrabold hover:border-[#422E7B] hover:text-[#422E7B] ">
-                Download CV
+              <button className="transition duration-1000 flex items-center rounded bg-white text-[#BC5ABA] border-[#BC5ABA] font-extrabold hover:border-[#422E7B] hover:text-[#422E7B] ">
+                <FaFileDownload className="mr-5 " /> Download CV
               </button>
             </div>
           </div>

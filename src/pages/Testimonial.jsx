@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Swiper from "swiper";
 import { Pagination } from "swiper";
 import { Navigation } from "swiper";
@@ -43,10 +44,10 @@ console.log(currentSlide)
   }, [currentSlide]);
  
   return (
-    <section className="px-10 ">
+    <section>
       <div className="relative">
         <div className="animate-wave">
-          <h1 className="text-3xl text-center">Testimonial</h1>
+          <h1 className="text-3xl text-center font-extrabold">Testimonial</h1>
         </div>
         <ul className="slider">
           <li className="">
@@ -93,18 +94,18 @@ console.log(currentSlide)
           </li>
         </ul>
         <div className="px-0 absolute flex  w-full h-full top-0 left-0">
-          <div className="flex w-full justify-between my-auto z-[1]">
+          <div className="flex w-full justify-between my-auto z-[1] ">
             <button
               className="rounded-full bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] shadow-medium opacity-80"
               onClick={prev}
             >
-              1
+            <FaAngleLeft/>
             </button>
             <button
               className="rounded-full bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] shadow-medium opacity-80"
               onClick={next}
             >
-              2
+            <FaAngleRight/>
             </button>
           </div>
         </div>

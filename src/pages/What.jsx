@@ -15,13 +15,13 @@ export default function What() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
             arcu, varius eget velit non.
           </p>
-          <button className="rounded mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center ">
+          <button className="transition duration-1000 rounded mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center ">
             My projet
           </button>
         </div>
         <div className="flex flex-col justify-around text-gray-500 w-2/5 max-md2:w-full">
-          <div className="bg-white rounded shadow p-5 hover:border-l-4 hover:border-[#BC5ABA] my-2">
-            <h1 className="text-xl font-extrabold text-black">
+          <div className="bg-white rounded shadow-md p-5 hover:border-l-4 hover:border-[#BC5ABA] my-2 transition duration-1000">
+            <h1 className="text-xl font-bold text-black">
               User Experience (UX)
             </h1>
             <p className="mt-5 text-xs">
@@ -30,8 +30,8 @@ export default function What() {
               ultrices eget lorem ac vestibulum.
             </p>
           </div>
-          <div className="bg-white rounded shadow p-5 hover:border-l-4 hover:border-[#BC5ABA] my-2">
-            <h1 className="text-xl font-extrabold text-black">
+          <div className="bg-white rounded shadow-md p-5 hover:border-l-4 hover:border-[#BC5ABA] my-2 transition duration-1000">
+            <h1 className="text-xl font-bold text-black">
               User Experience (UX)
             </h1>
             <p className="mt-5 text-xs">
@@ -40,8 +40,8 @@ export default function What() {
               ultrices eget lorem ac vestibulum.
             </p>
           </div>
-          <div className="bg-white rounded shadow p-5 hover:border-l-4 hover:border-[#BC5ABA] my-2">
-            <h1 className="text-xl font-black text-black">
+          <div className="bg-white rounded shadow-md p-5 hover:border-l-4 hover:border-[#BC5ABA] my-2 transition duration-1000">
+            <h1 className="text-xl font-bold text-black">
               User Experience (UX)
             </h1>
             <p className="mt-5 text-xs">

@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <section className="px-20 py-20 bg-white max-xs:px-5">
       <div className="min-h-screen animate-wave ">
-        <h1 className="text-3xl text-center">Portfolio</h1>
+        <h1 className="text-3xl text-center font-extrabold">Portfolio</h1>
         <div className="flex justify-center my-5">
           <p className="text-xs text-gray-500 text-center w-1/3 max-xs:w-full max-sm:w-4/5 max-lg:w-3/4">
             There are many variations of passages of Lorem Ipsum available, but
@@ -19,7 +19,25 @@ export default function Portfolio() {
         </div>
         <div className="flex justify-around flex-wrap">
           <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
+            <img src={img6} alt="" width={316} className="h-48 hover:scale-125 transition duration-1000" />
+            <div className="px-5 pt-5">
+              <div className="text-gray-500">
+                <p className="text-gray-500">UI-DESIGN</p>
+                <h1 className="font-extrabold text-sm text-black">
+                  Product Admin Dashboard
+                </h1>
+              </div>
+              <p className="my-5">
+                Vivamus eleifend convallis ante, non pharetra libero molestie
+                laoreet. Donec id imperdiet lacus.
+              </p>
+              <button className="transition duration-1000 top-5 relative bg-white text-[#BC5ABA] border-[#BC5ABA] font-extrabold hover:border-[#422E7B] hover:text-[#422E7B] rounded">
+                Case Study
+              </button>
+            </div>
+          </div>
+          <div className="rounded shadow w-72 text-xs mb-10">
+            <img src={img2} alt="" width={316} className="h-48" />
             <div className="px-5 pt-5">
               <div className="text-gray-500">
                 <p className="text-gray-500">UI-DESIGN</p>
@@ -37,7 +55,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
+            <img src={img4} alt="" width={316} className="h-48" />
             <div className="px-5 pt-5">
               <div className="text-gray-500">
                 <p className="text-gray-500">UI-DESIGN</p>
@@ -55,7 +73,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
+            <img src={img2} alt="" width={316} className="h-48" />
             <div className="px-5 pt-5">
               <div className="text-gray-500">
                 <p className="text-gray-500">UI-DESIGN</p>
@@ -73,7 +91,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
+            <img src={img3} alt="" width={316} className="h-48" />
             <div className="px-5 pt-5">
               <div className="text-gray-500">
                 <p className="text-gray-500">UI-DESIGN</p>
@@ -91,7 +109,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
+            <img src={img4} alt="" width={316} className="h-48" />
             <div className="px-5 pt-5">
               <div className="text-gray-500">
                 <p className="text-gray-500">UI-DESIGN</p>
@@ -109,7 +127,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
+            <img src={img5} alt="" width={316} className="h-48" />
             <div className="px-5 pt-5">
               <div className="text-gray-500">
                 <p className="text-gray-500">UI-DESIGN</p>
@@ -127,25 +145,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
-            <div className="px-5 pt-5">
-              <div className="text-gray-500">
-                <p className="text-gray-500">UI-DESIGN</p>
-                <h1 className="font-extrabold text-sm text-black">
-                  Product Admin Dashboard
-                </h1>
-              </div>
-              <p className="my-5">
-                Vivamus eleifend convallis ante, non pharetra libero molestie
-                laoreet. Donec id imperdiet lacus.
-              </p>
-              <button className="top-5 relative bg-white text-[#BC5ABA] border-[#BC5ABA] font-extrabold hover:border-[#422E7B] hover:text-[#422E7B] rounded">
-                Case Study
-              </button>
-            </div>
-          </div>
-          <div className="rounded shadow w-72 text-xs mb-10">
-            <img src={img1} alt="" width={316} className="h-48" />
+            <img src={img6} alt="" width={316} className="h-48" />
             <div className="px-5 pt-5">
               <div className="text-gray-500">
                 <p className="text-gray-500">UI-DESIGN</p>
@@ -164,7 +164,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="text-center mt-10">
-          <button className="rounded mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center ">
+          <button className="transition duration-1000 rounded mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center ">
             More Projet
           </button>
         </div>

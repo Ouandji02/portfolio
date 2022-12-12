@@ -10,8 +10,7 @@ module.exports = {
         type: 'type 2.7s ease-out .8s infinite alternate both',
         wave:"wave 1.5s linear both",
         menu : "menu 0.3s linear both",
-        menureverse : "menu 0.3s linear reverse",
-        zoom:"zoom 0.1s linear both"
+        zoom:"zoom 0.8s linear both"
       },
       keyframes: {
         type: {
