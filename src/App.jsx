@@ -7,6 +7,11 @@ import Idea from './pages/Idea'
 import Portfolio from './pages/Portfolio'
 import Process from './pages/Process'
 import What from './pages/What'
+import 'swiper/css'
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 function App() {
   return (
     <>
@@ -15,7 +20,6 @@ function App() {
     <Process></Process>
     <Portfolio></Portfolio>
     <Idea></Idea>
-    <Blog></Blog>
     <What></What>
     <FinalSection></FinalSection>
     <Footer></Footer>

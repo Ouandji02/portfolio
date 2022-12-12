@@ -3,7 +3,7 @@ import React from "react";
 export default function Process() {
   return (
     <section id="processus" className="px-20 bg-gray-100 my-auto max-lg:px-10 max-sm:px-5">
-      <div className="flex justify-center min-h-screen items-center pb-10 max-md2:flex-wrap max-md2:justify-center max-md2:pt-20 ">
+      <div className="animate-wave flex justify-center min-h-screen items-center pb-10 max-md2:flex-wrap max-md2:justify-center max-md2:pt-20 ">
         <div className="text-xs text-gray-500 w-2/3 max-md:max-w-48 max-xs2:w-4/5 text-center max-sx:w-full">
           <h1 className="text-black mb-5">Work Process</h1>
           <p className="py-3">

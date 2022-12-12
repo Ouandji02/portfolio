@@ -9,7 +9,7 @@ export default function HappyCllients() {
   return (
     <section>
         <h1 className="text-3xl text-center">Happy clients</h1>
-        <div className="flex justify-center my-5">
+        <div className="animate-wave flex justify-center my-5">
           <p className="text-xs text-gray-500 text-center w-1/2 max-xs:w-full max-sm:w-4/5 max-lg:w-3/4">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.

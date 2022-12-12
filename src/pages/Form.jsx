@@ -9,7 +9,7 @@ export default function Form() {
           There are many variations of passages of Lorem Ipsu available. but the
           majority have suffered alte.
         </p>
-        <div className="flex mb-5 hover:shadow-lg hover:bg-white hover:scale-md hover:rounded">
+        <div className="flex mb-5 hover:shadow-lg hover:bg-white hover:scale-125 hover:rounded">
           <div className="p-3">
             <button className="hover:bg-[#422E7B]">h</button>
           </div>
@@ -18,7 +18,7 @@ export default function Form() {
             <p>Dschang, Brasserie</p>
           </div>
         </div>
-        <div className="flex mb-5 hover:shadow-lg hover:bg-white hover:rounded">
+        <div className="flex mb-5 hover:shadow-lg hover:bg-white hover:rounded hover:scale-125">
           <div className="p-3">
             <button className="hover:bg-[#422E7B]">h</button>
           </div>
@@ -27,7 +27,7 @@ export default function Form() {
             <p>Dschang, Brasserie</p>
           </div>
         </div>
-        <div className="flex mb-5 hover:shadow-lg hover:bg-white hover:rounded">
+        <div className="flex mb-5 hover:shadow-lg hover:bg-white hover:rounded hover:scale-125">
           <div className="p-3">
             <button className="hover:bg-[#422E7B]">h</button>
           </div>

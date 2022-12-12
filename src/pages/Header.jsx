@@ -4,14 +4,20 @@ import img from "../assets/images/image.png";
 
 export default function Header() {
   return (
-    <section id="accueil" class="max-lg:pt-10 py-10 bg-cover bg-center bg-no-repeat px-20 bg-gradient-to-r from-white via-white to-[#B2ABD0] max-sx:px-5 max-sx:pr-2">
-      <div>
-        <div className="relative flex max-h-screen max-w-screen lg:items-center mx-auto justify-between">
-          <div className="max-w-md text-center sm:text-left">
+    <header
+      id="accueil"
+      class="pt-20 max-lg:pt-20 max-xl:px-10 pb-10 bg-cover bg-center bg-no-repeat px-20 bg-gradient-to-r from-white via-white to-[#B2ABD0] max-sx:px-5 max-sx:pr-2"
+    >
+      <div className="animate-wave">
+        <div className="relative flex max-h-screen max-w-screen lg:items-center mx-auto justify-between max-md:block">
+          <div className="max-w-md text-center sm:text-left max-md:w-full">
             <h1 className="font-extrabold max-sm:text-4xl">
-              Salut , Je suis OUANDJI Thierry
+              Salut , Je suis <br className="block max-md:hidden" />
+              <span className="inline-flex h-20 pt-2 overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform">
+                OUANDJI THIERRY 👋
+              </span>
             </h1>
-            <p className="text-gray-400 text-xs font-bold my-5">
+            <p className="text-gray-400 text-xs font-bold my-5 animate-wave">
               Je suis developpeur mobile ayant une certaine expertise en
               programmation kotlin.Je fais egalement du developpement web
               notamment avec les technologies ReactJS et NextJs
@@ -21,21 +27,21 @@ export default function Header() {
             </button>
             <div className="flex justify-between text-gray-600 mt-10 max-sm:block">
               <div className="py-3 px-8 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6]">
-                <span className="text-black font-extrabold text-xl">+2Y</span>
+                <span className="text-black font-semibold text-xl">+2Y</span>
                 <br />
-                <span className="text-xs font-extrabold pt-3">Experience</span>
+                <span className="text-xs font-bold pt-3">Experience</span>
               </div>
-              <div className="py-3 px-7 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6]">
-                <span className="text-black font-extrabold text-xl">10</span>
+              <div className="py-3 px-5 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6]">
+                <span className="text-black font-bold text-xl">10</span>
                 <br />
-                <span className="text-xs font-extrabold pt-3">
+                <span className="text-xs font-semibold pt-3">
                   Projets accomplis
                 </span>
               </div>
               <div className="py-3 px-7 align-center bg-gray-100 text-center mb-2 bg-[#F6EAF6]">
-                <span className="text-black font-extrabold text-xl">8</span>
+                <span className="text-black font-bold text-xl">8</span>
                 <br />
-                <span className="text-xs font-extrabold pt-3">
+                <span className="text-xs font-semibold pt-3">
                   Clients contents
                 </span>
               </div>
@@ -45,7 +51,7 @@ export default function Header() {
             <img src={img} alt="" className="h-96 w-96" />
           </div>
         </div>
-        <div className="py-10 flex justify-center bg-white shadow rounded relative top-[200px] mb-3 flex-wrap max-lgsm:w-auto max-mdsm:justify-center max-mdsm:top-[100px]">
+        <div className="animate-wave animate-bounce py-10 flex justify-center bg-white shadow rounded relative top-[200px] mb-3 flex-wrap max-lgsm:w-auto max-mdsm:justify-center max-mdsm:top-[100px]">
           <div className=" p-5 bg-gray-100 rounded max-w-sm max-h-80 max-mdsm:max-w-full mb-10">
             <img src={img} alt="" className="max-h-80" />
             <div className="relative flex bg-white p-2 shadow top-[-50px] rounded">
@@ -78,6 +84,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 }
