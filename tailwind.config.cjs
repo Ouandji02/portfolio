@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode:"class",
   theme: {
     extend: {
       animation: {
@@ -50,6 +51,10 @@ module.exports = {
     },
     backgroundSize: {
       cover: "cover",
+    },
+    colors:{
+      dark : "#111827",
+      bgdark:"#1E293B"
     },
     screens: {
       xs: "420px",

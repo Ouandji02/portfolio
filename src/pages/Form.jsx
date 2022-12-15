@@ -3,16 +3,16 @@ import { FaFacebookF, FaFacebookMessenger, FaGithub, FaLinkedinIn, FaMailBulk, F
 
 export default function Form() {
   return (
-    <div className="relative top-[150px] bg-white flex justify-center p-10 rounded shadow-lg max-md2:px-5 max-md2:flex-wrap ">
-      <div className="mr-5 max-md2:w-3/4 max-xs:text-sm max-xs:w-full max-xs:px-5">
+    <div className="relative top-[150px] bg-white dark:bg-bgdark flex justify-center p-10 rounded shadow-lg max-md:px-5 max-md:flex-wrap max-sm:w-full">
+      <div className="mr-5 max-md:w-3/4 max-xs:text-sm max-sm:w-full max-sm:px-5">
         <h1 className="font-extrabold text-2xl">Let’s discuss your Project</h1>
         <p className="my-5 text-xs text-gray-500">
           There are many variations of passages of Lorem Ipsu available. but the
           majority have suffered alte.
         </p>
-        <div className="flex mb-5 hover:shadow-xl w-72 hover:bg-white hover:scale-110 transition duration-1000 hover:rounded">
+        <div className="flex mb-5 dark:hover:bg-bgdark hover:shadow-xl w-72 hover:bg-white hover:scale-110 transition duration-1000 hover:rounded">
           <div className="p-3">
-            <button className="hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
+            <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white hover:border-[#BC5ABA] mr-3 transition duration-1000">
               <FaRegAddressCard/>
             </button>
           </div>
@@ -21,9 +21,9 @@ export default function Form() {
             <p className="font-bold">Dschang, Brasserie</p>
           </div>
         </div>
-        <div className="bg-white flex mb-5 w-72 hover:shadow-xl hover:bg-white hover:rounded hover:scale-110 transition duration-1000">
+        <div className="flex mb-5 w-72 hover:shadow-xl hover:bg-white dark:hover:bg-bgdark hover:rounded hover:scale-110 transition duration-1000">
           <div className="p-3">
-            <button className="hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
+            <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
               <FaMailBulk/>
             </button>
           </div>
@@ -32,9 +32,9 @@ export default function Form() {
             <p className="font-bold">Dschang, Brasserie</p>
           </div>
         </div>
-        <div className="flex mb-5 w-72 hover:shadow-xl hover:bg-white hover:rounded hover:scale-110 transition duration-1000">
+        <div className="flex mb-5 w-72 hover:shadow-xl hover:bg-white dark:hover:bg-bgdark hover:rounded hover:scale-110 transition duration-1000">
           <div className="p-3">
-            <button className="hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
+            <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
               <FaPhone/>
             </button>
           </div>
@@ -46,16 +46,16 @@ export default function Form() {
           </div>
         </div>
         <div className="flex">
-          <button className="hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
+          <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
             <FaFacebookF/>
           </button>
-          <button className="hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
+          <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
           <FaTwitter/>
           </button>
-          <button className="hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
+          <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
           <FaGithub/>
           </button>
-          <button className="hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
+          <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
           <FaLinkedinIn/>
           </button>
         </div>
@@ -147,7 +147,7 @@ export default function Form() {
             </label>
           </div>
           <div>
-            <button className="rounded text-sm mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center transition duration-1000">
+            <button className="dark:bg-dark border-white px-4 py-2 rounded text-sm mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center transition duration-1000">
               Submit
             </button>
           </div>

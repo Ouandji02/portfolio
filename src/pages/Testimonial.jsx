@@ -2,17 +2,13 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import Swiper from "swiper";
-import { Pagination } from "swiper";
-import { Navigation } from "swiper";
 
 export default function Testimonial() {
   const [currentSlide, setCurrentSlide] = useState(1);
-console.log(currentSlide)
+  console.log(currentSlide);
   const prev = () => {
     if (currentSlide > 1) {
       setCurrentSlide((current) => current - 1);
-      console.log(currentSlide);
     }
   };
 
@@ -20,7 +16,6 @@ console.log(currentSlide)
     const total = document.querySelector(".slider").childElementCount;
     if (currentSlide < total) {
       setCurrentSlide((current) => current + 1);
-      console.log(currentSlide);
     }
   };
 
@@ -40,9 +35,9 @@ console.log(currentSlide)
   };
 
   useEffect(() => {
-     showSlide()
+    showSlide();
   }, [currentSlide]);
- 
+
   return (
     <section>
       <div className="relative">
@@ -96,16 +91,16 @@ console.log(currentSlide)
         <div className="px-0 absolute flex  w-full h-full top-0 left-0">
           <div className="flex w-full justify-between my-auto z-[1] ">
             <button
-              className="rounded-full bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] shadow-medium opacity-80"
+              className="px-2 py-2 rounded-full bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] shadow-medium opacity-80"
               onClick={prev}
             >
-            <FaAngleLeft/>
+              <FaAngleLeft />
             </button>
             <button
-              className="rounded-full bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] shadow-medium opacity-80"
+              className="px-2 py-2 rounded-full bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] shadow-medium opacity-80"
               onClick={next}
             >
-            <FaAngleRight/>
+              <FaAngleRight />
             </button>
           </div>
         </div>

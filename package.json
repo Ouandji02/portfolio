@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && vite preview && firebase deploy",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "vercel": "^28.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
