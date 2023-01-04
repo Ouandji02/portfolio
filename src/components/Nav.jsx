@@ -10,10 +10,14 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Nav() {
   const [state, setstate] = useState(false);
-
+  const [location, setLocation] = useState(window.location.href);
+  if(location != window.location.href){
+    setLocation(window.location.href)
+  }
   useEffect(() => {
     menu();
     toggleTheme();
@@ -44,6 +48,28 @@ export default function Nav() {
     checkbox.addEventListener("click", toggleDarkMode);
   };
 
+  const navs = [
+    {
+      name: "Accueil",
+      href: "#accueil",
+    },
+    {
+      name: "A propos",
+      href: "#apropos",
+    },
+    {
+      name: "Processus",
+      href: "#processus",
+    },
+    {
+      name: "Portfolio",
+      href: "#portfolio",
+    },
+    {
+      name: "Services",
+      href: "#services",
+    },
+  ];
   return (
     <nav className="bg-white py-3 px-20 dark:text-gray-700 dark:bg-dark flex justify-between flex-wrap max-md:px-5 fixed w-full z-[5] items-center">
       <div>
@@ -69,47 +95,29 @@ export default function Nav() {
         </button>
       </div>
       <ul className="px-1 dark:bg-dark dark:bg-bgdark max-md:absolute z-[1] max-md:bg-white max-md:top-[60px] max-md:shadow flex text-sm items-center max-md:hidden max-md:block max-md: max-md:w-100 max-md:right-5 max-md:py-5 max-md:ml-0">
-        <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          <a
-            className="px-3 hover:text-white font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded text-gray-600"
-            href="#accueil"
+        {navs.map((nav, key) => (
+          <li
+            className={
+              location.endsWith(nav.href)
+                ? "px-3 text-[#422E7B] font-medium active:text-[#422E7B] py-2 bg-[#422E7B] text-white rounded"
+                : "px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded"
+            }
+            onClick={()=> 
+              window.setTimeout(()=>setLocation(window.location.href),100)
+              }
           >
-            Accueil
-          </a>
-        </li>
-        <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          <a
-            className="text-gray-600 px-3 hover:text-white font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded"
-            href="#propos"
-          >
-            A propos
-          </a>
-        </li>
-        <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          <a
-            className="text-gray-600 px-3 hover:text-white font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded"
-            href="#processus"
-          >
-            Processus
-          </a>
-        </li>
-        <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          <a
-            className="text-gray-600 px-3 hover:text-white dark:text-white font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded"
-            href="#portfolio"
-          >
-            Portfolio
-          </a>
-        </li>
-        <li className="px-3 hover:text-[#422E7B] font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded">
-          <a
-            className="text-gray-600 px-3 hover:text-white font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded"
-            href="#services"
-          >
-            {" "}
-            Services
-          </a>
-        </li>
+            <a
+              className={
+                location.endsWith(nav.href)
+                  ? "px-3 hover:text-white text-white font-medium active:text-[#422E7B] py-2 bg-[#422E7B] text-white rounded text-gray-600 hover:bg-[#422E7B] hover:text-white"
+                  : "px-3 hover:text-white font-medium active:text-[#422E7B] py-2 hover:bg-[#422E7B] hover:text-white rounded text-gray-600"
+              }
+              href={nav.href}
+            >
+              {nav.name}
+            </a>
+          </li>
+        ))}
         <button className="border-white dark:bg-dark px-4 py-2 rounded transition duration-1000 mx-3 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] my-2 hover:border-[#BC5ABA] font-medium">
           <li className="">
             <a className="px-5 text-white hover:text-[#BC5ABA]" href="#contact">

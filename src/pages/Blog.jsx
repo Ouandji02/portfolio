@@ -8,23 +8,6 @@ import img5 from "../assets/images/portfolio5.png";
 import img6 from "../assets/images/portfolio6.png";
 
 export default function Blog() {
-  const swiper = new Swiper(".swiper", {
-    modules: [Navigation, Pagination],
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
   return (
     <section className="px-20  py-20">
       <div class="swiper">
