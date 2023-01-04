@@ -24,8 +24,6 @@ export default function Testimonial() {
     const slides = document.querySelector(".slider").querySelectorAll("li");
     for (let index = 0; index < total; index++) {
       const element = slides[index];
-      console.log("jhgfhj", element);
-      console.log("jhgfhjccccccccc", currentSlide);
       if (currentSlide === index + 1) {
         element.classList.remove("hidden");
       } else {
@@ -38,55 +36,42 @@ export default function Testimonial() {
     showSlide();
   }, [currentSlide]);
 
+  const testimonials = [
+    {
+      profession: "PDG de UNIKEZA",
+      name : "Patric GUIFO",
+      text: "“Nous sommes toujours étonnés par vos accomplissements.Continuez à faire du bon travail ! Les entreprises rêvent de trouver des employés comme vous, merci pour votre dévouement.C'est incroyable de vous voir constamment placer la barre haut.”",
+    },
+    {
+      profession: "Directeur technique de UNIKEZA",
+      name : "ABOUDEM IDRICE",
+      text: "“Lors du dernier quart de travail, tu as dû gérer plus de tâches en raison de l’absence de ton collègue et tu as relevé ce défi de manière impeccable. Bravo pour ton efficacité et merci de ta dévotion.”",
+    },
+    {
+      profession: "Directrice générale de UNIKEZA",
+      name : "SUMO MANUELA",
+      text: "“Un employé sur lequel on peut compter est le meilleur cadeau que puisse demander un leader. Merci de votre grande fiabilité.”",
+    },
+  ];
+
   return (
     <section>
       <div className="relative">
         <div className="animate-wave">
-          <h1 className="text-3xl text-center font-extrabold">Testimonial</h1>
+          <h1 className="text-3xl text-center font-extrabold">Temoignages</h1>
         </div>
         <ul className="slider">
-          <li className="">
-            <div className="flex flex-col items-center justify-center my-5">
-              <p className="mt-10 w-1/2 max-xs:w-64 max-sm:w-4/5 max-lg:w-3/4">
-                “1Nulla efficitur nisl sit amet velit malesuada dapibus. Duis
-                mollis felis turpis, nec semper odio convallis at. Curabitur
-                imperdiet semper arcu, a finibus arcu suscipit in. Donec quis
-                placerat nibh. Maecenas est purus, eleifend ac cursus sed,
-                tincidunt ut sapien. Morbi ornare elit at libero suscipit
-                porta.”
-              </p>
-              <p className="my-5 font-extrabold">Ouandji Thierry</p>
-              <p>Manger, gerant de projet</p>
-            </div>
-          </li>
-          <li className="hidden">
-            <div className="flex flex-col items-center justify-center my-5 ">
-              <p className="mt-10 w-1/2 max-xs:w-64 max-sm:w-4/5 max-lg:w-3/4">
-                “3Nulla efficitur nisl sit amet velit malesuada dapibus. Duis
-                mollis felis turpis, nec semper odio convallis at. Curabitur
-                imperdiet semper arcu, a finibus arcu suscipit in. Donec quis
-                placerat nibh. Maecenas est purus, eleifend ac cursus sed,
-                tincidunt ut sapien. Morbi ornare elit at libero suscipit
-                porta.”
-              </p>
-              <p className="my-5 font-extrabold">Ouandji Thierry</p>
-              <p>Manger, gerant de projet</p>
-            </div>
-          </li>
-          <li className="hidden">
-            <div className="flex flex-col items-center justify-center my-5">
-              <p className="mt-10 w-1/2 max-xs:w-64 max-sm:w-4/5 max-lg:w-3/4">
-                “2Nulla efficitur nisl sit amet velit malesuada dapibus. Duis
-                mollis felis turpis, nec semper odio convallis at. Curabitur
-                imperdiet semper arcu, a finibus arcu suscipit in. Donec quis
-                placerat nibh. Maecenas est purus, eleifend ac cursus sed,
-                tincidunt ut sapien. Morbi ornare elit at libero suscipit
-                porta.”
-              </p>
-              <p className="my-5 font-extrabold">Ouandji Thierry</p>
-              <p>Manger, gerant de projet</p>
-            </div>
-          </li>
+          {testimonials.map((testimonial, key) => (
+            <li className={key === 0 ? "" : "hidden"}>
+              <div className="flex flex-col items-center justify-center my-5">
+                <p className="mt-10 w-1/2 max-xs:w-64 max-sm:w-4/5 max-lg:w-3/4 text-center">
+                  {testimonial.text}
+                </p>
+                <p className="my-5 font-extrabold">{testimonial.name}</p>
+                <p>{testimonial.profession}</p>
+              </div>
+            </li>
+          ))}
         </ul>
         <div className="px-0 absolute flex  w-full h-full top-0 left-0">
           <div className="flex w-full justify-between my-auto z-[1] ">
@@ -105,20 +90,6 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-      {/* <div className="animate-wave ">
-        <h1 className="text-3xl text-center">Testimonial</h1>
-        <div className="flex flex-col items-center justify-center my-5">
-          <p className="mt-10 w-1/2 max-xs:w-64 max-sm:w-4/5 max-lg:w-3/4">
-            “1Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis
-            felis turpis, nec semper odio convallis at. Curabitur imperdiet
-            semper arcu, a finibus arcu suscipit in. Donec quis placerat nibh.
-            Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-            Morbi ornare elit at libero suscipit porta.”
-          </p>
-          <p className="my-5 font-extrabold">Ouandji Thierry</p>
-          <p>Manger, gerant de projet</p>
-        </div>
-      </div> */}
     </section>
   );
 }

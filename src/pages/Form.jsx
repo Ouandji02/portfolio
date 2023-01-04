@@ -1,7 +1,22 @@
+import { EmailJSResponseStatus } from "emailjs-com";
 import React from "react";
-import { FaFacebookF, FaFacebookMessenger, FaGithub, FaLinkedinIn, FaMailBulk, FaMailchimp, FaPhone, FaRegAddressCard, FaTwitter, FaVoicemail } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaFacebookMessenger,
+  FaGithub,
+  FaLinkedinIn,
+  FaMailBulk,
+  FaMailchimp,
+  FaPhone,
+  FaRegAddressCard,
+  FaTwitter,
+  FaVoicemail,
+} from "react-icons/fa";
 
 export default function Form() {
+  const sendMail = ()=>{
+    
+  }
   return (
     <div className="relative top-[150px] bg-white dark:bg-bgdark flex justify-center p-10 rounded shadow-lg max-md:px-5 max-md:flex-wrap max-sm:w-full">
       <div className="mr-5 max-md:w-3/4 max-xs:text-sm max-sm:w-full max-sm:px-5">
@@ -13,7 +28,7 @@ export default function Form() {
         <div className="flex mb-5 dark:hover:bg-bgdark hover:shadow-xl w-72 hover:bg-white hover:scale-110 transition duration-1000 hover:rounded">
           <div className="p-3">
             <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white hover:border-[#BC5ABA] mr-3 transition duration-1000">
-              <FaRegAddressCard/>
+              <FaRegAddressCard />
             </button>
           </div>
           <div className="p-3 text-xs">
@@ -24,7 +39,7 @@ export default function Form() {
         <div className="flex mb-5 w-72 hover:shadow-xl hover:bg-white dark:hover:bg-bgdark hover:rounded hover:scale-110 transition duration-1000">
           <div className="p-3">
             <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
-              <FaMailBulk/>
+              <FaMailBulk />
             </button>
           </div>
           <div className="p-3 text-xs">
@@ -35,7 +50,7 @@ export default function Form() {
         <div className="flex mb-5 w-72 hover:shadow-xl hover:bg-white dark:hover:bg-bgdark hover:rounded hover:scale-110 transition duration-1000">
           <div className="p-3">
             <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
-              <FaPhone/>
+              <FaPhone />
             </button>
           </div>
           <div className="p-3 text-xs font-medium">
@@ -47,16 +62,16 @@ export default function Form() {
         </div>
         <div className="flex">
           <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
-            <FaFacebookF/>
+            <FaFacebookF />
           </button>
           <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
-          <FaTwitter/>
+            <FaTwitter />
           </button>
           <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
-          <FaGithub/>
+            <FaGithub />
           </button>
           <button className="px-4 py-2 hover:bg-[#BC5ABA] hover:text-white mr-3 hover:border-[#BC5ABA] transition duration-1000">
-          <FaLinkedinIn/>
+            <FaLinkedinIn />
           </button>
         </div>
       </div>
@@ -147,7 +162,10 @@ export default function Form() {
             </label>
           </div>
           <div>
-            <button className="dark:bg-dark border-white px-4 py-2 rounded text-sm mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center transition duration-1000">
+            <button
+              type="submit"
+              className="dark:bg-dark border-white px-4 py-2 rounded text-sm mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center transition duration-1000"
+            >
               Submit
             </button>
           </div>
