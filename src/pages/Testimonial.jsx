@@ -62,7 +62,7 @@ export default function Testimonial() {
         </div>
         <ul className="slider">
           {testimonials.map((testimonial, key) => (
-            <li className={key === 0 ? "" : "hidden"}>
+            <li className={key === 0 ? "" : "hidden"} key={key}>
               <div className="flex flex-col items-center justify-center my-5">
                 <p className="mt-10 w-1/2 max-xs:w-64 max-sm:w-4/5 max-lg:w-3/4 text-center">
                   {testimonial.text}

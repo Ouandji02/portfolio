@@ -12,9 +12,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useEffect } from "react";
+import { init } from "emailjs-com";
 
 function App() {
- 
+  init("user_xbCxtpUwJQMVgWuGJWxfI")
   return (
     <div className="dark:bg-[#111827]">
       <Nav></Nav>

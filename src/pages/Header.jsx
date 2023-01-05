@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header
       id="accueil"
-      class="z-2 pt-20 max-lg:pt-20 max-xl:px-10 pb-10 bg-cover bg-center bg-no-repeat px-20 bg-gradient-to-r from-white via-white to-[#B2ABD0] max-sx:px-5 max-sx:pr-2 dark:bg-gradient-to dark:from-dark "
+      className="z-2 pt-20 max-lg:pt-20 max-xl:px-10 pb-10 bg-cover bg-center bg-no-repeat px-20 bg-gradient-to-r from-white via-white to-[#B2ABD0] max-sx:px-5 max-sx:pr-2 dark:bg-gradient-to dark:from-dark "
     >
       <div className="animate-wave">
         <div className="relative flex max-h-screen max-w-screen lg:items-center mx-auto justify-between max-md:block">
