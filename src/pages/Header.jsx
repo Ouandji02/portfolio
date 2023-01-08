@@ -7,6 +7,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import cv from "../assets/images/documents/CV.pdf"
 
 export default function Header() {
   return (
@@ -103,9 +104,11 @@ export default function Header() {
               {/* <button className="border-white dark:bg-dark px-4 py-2 transition duration-1000 rounded mr-10 bg-[#422E7B] text-white hover:bg-white hover:text-[#BC5ABA] hover:border-[#BC5ABA] font-extrabold max-sm:mb-5 max-sm:justify-center ">
                 My projet
               </button> */}
+              <a href={window.URL.createObjectURL(new Blob([cv],{type:'application/pdf'}))} download>
               <button className="dark:bg-dark px-4 py-2 transition duration-1000 flex items-center rounded bg-white text-[#BC5ABA] border-[#BC5ABA] font-extrabold hover:border-[#422E7B] hover:text-[#422E7B] ">
                 <FaFileDownload className="mr-5 " /> Download CV
               </button>
+              </a>
             </div>
           </div>
         </div>
